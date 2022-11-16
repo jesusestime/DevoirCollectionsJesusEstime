@@ -17,6 +17,7 @@ del Provinces_burundi[2]
 
 Provinces_burundi.pop(2)
 
+# J'ai préféré ordonner la liste suivant l'ordre alphabétique
 Provinces_burundi.sort()
 
 del Provinces_burundi
@@ -45,6 +46,7 @@ for p in Provinces_burundi:
 
 print(Provinces_burundi[4])
 
+# J'ai préféré ordonner le tuple suivant l'ordre alphabétique
 Provinces_burundi_sorted=sorted(Provinces_burundi)
 
 
@@ -62,5 +64,6 @@ for k in Provinces_burundi.keys():
 for k in Provinces_burundi.values():
     print(k)
 
+# J'ai préféré ordonner mon dictionnaire suivant leur valeurs et par ordre alphabétique
 for k in sorted(Provinces_burundi.values()):
     print(k)
