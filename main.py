@@ -55,3 +55,6 @@ Provinces_burundi = {"Bur": "Province de Bururi","Buz":"Province de Bubanza","Bj
 
 for key,value in Provinces_burundi.items():
     print(key +" : "+ value)
+
+for k in Provinces_burundi.keys():
+    print(k)
