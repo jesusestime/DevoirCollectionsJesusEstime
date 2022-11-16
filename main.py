@@ -67,3 +67,13 @@ for k in Provinces_burundi.values():
 # J'ai préféré ordonner mon dictionnaire suivant leur valeurs et par ordre alphabétique
 for k in sorted(Provinces_burundi.values()):
     print(k)
+
+# J'ai préféré de trouver  d'abord la clé contenant l'élément à l'index numero 2 pour l'effacer 
+p=[]
+for k in Provinces_burundi.keys():
+    p.append(k)
+print(p[2])
+
+# C'est Bjm pour mon cas de liste
+del Provinces_burundi['Bjm']
+
