@@ -61,3 +61,6 @@ for k in Provinces_burundi.keys():
 
 for k in Provinces_burundi.values():
     print(k)
+
+for k in sorted(Provinces_burundi.values()):
+    print(k)
