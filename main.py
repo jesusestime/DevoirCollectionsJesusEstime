@@ -12,3 +12,5 @@ Provinces_burundi.append("Province de Rumonge")
 Provinces_burundi.insert(2,"Province de Muramvya")
 
 del Provinces_burundi[2]
+
+Provinces_burundi.pop(2)
