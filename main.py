@@ -10,3 +10,6 @@ Provinces_burundi[4]="Province de Ruyigi"
     
 Provinces_burundi.append("Province de Rumonge")
 
+
+Provinces_burundi.insert(2,"Province de Muramvya")
+
