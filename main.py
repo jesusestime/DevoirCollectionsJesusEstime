@@ -16,3 +16,5 @@ del Provinces_burundi[2]
 Provinces_burundi.pop(2)
 
 Provinces_burundi.sort()
+
+del Provinces_burundi
