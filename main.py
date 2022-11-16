@@ -1,3 +1,5 @@
+print("\n Question I : Liste")
+
 Provinces_burundi = ["Province de Bubanza", "Province de Bujumbura Mairie", "Province de Bujumbura", "Province de Bururi", "Province de Cankuzo", "Province de Cibitoke", "Province de Gitega", "Province de Karuzi", "Province de Kayanza", "Province de Kirundo"]
 
 
@@ -18,3 +20,9 @@ Provinces_burundi.pop(2)
 Provinces_burundi.sort()
 
 del Provinces_burundi
+
+
+print("\n Question II : Tuple")
+
+Provinces_burundi = ("Province de Bubanza", "Province de Bujumbura Mairie", "Province de Bujumbura", "Province de Bururi", "Province de Cankuzo", "Province de Cibitoke", "Province de Gitega", "Province de Karuzi", "Province de Kayanza", "Province de Kirundo")
+
