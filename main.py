@@ -58,3 +58,6 @@ for key,value in Provinces_burundi.items():
 
 for k in Provinces_burundi.keys():
     print(k)
+
+for k in Provinces_burundi.values():
+    print(k)
