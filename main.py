@@ -3,3 +3,10 @@ Provinces_burundi = ["Province de Bubanza", "Province de Bujumbura Mairie", "Pro
 
 for p in Provinces_burundi :
     print(p)
+
+
+Provinces_burundi[4]="Province de Ruyigi"
+
+    
+
+
