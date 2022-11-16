@@ -77,3 +77,6 @@ print(p[2])
 # C'est Bjm pour mon cas de liste
 del Provinces_burundi['Bjm']
 
+for key,value in Provinces_burundi.items():
+    print(key +" : "+ value)
+
