@@ -6,10 +6,9 @@ for p in Provinces_burundi :
 
 
 Provinces_burundi[4]="Province de Ruyigi"
-
     
 Provinces_burundi.append("Province de Rumonge")
 
-
 Provinces_burundi.insert(2,"Province de Muramvya")
 
+del Provinces_burundi[2]
