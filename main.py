@@ -114,52 +114,94 @@ Provinces_burundi_sorted=tuple(sorted(Provinces_burundi))
 
 
 
+
+
+
+
+
+
+
+
+
+
 # Ajout d'un title du question numero 3
 print("\n Question III : Dictionnaire")
 
 
 # Création et remplissage du dictionnaire de 10 éléments de type chaîne de caractères ,Il s'agit d'un dictionnaire contenant les provinces du Burundi associés aux clés correspondant à leur abbréviation
-
 Provinces_burundi = {"Bur": "Province de Bururi","Buz":"Province de Bubanza","Bjm": "Province de Bujumbura Mairie","Bj":"Province de Bujumbura","Ckz" : "Province de Cankuzo","Cbt" : "Province de Cibitoke","Gtg": "Province de Gitega","Krz" : "Province de Karuzi","Kyz" :"Province de Kayanza","Krd" :"Province de Kirundo"}
 
 
-
+print("\n13==========================\n")
 # Affichage des éléments du dictionnaire
 for key,value in Provinces_burundi.items():
     print(key +" : "+ value)
 
+
+print("\n14==========================\n")
 # Affichage des clés du dictionnaire
 for k in Provinces_burundi.keys():
     print(k)
 
+print("\n15==========================\n")
 # Affichage des valeurs du dictionnaire
-for k in Provinces_burundi.values():
-    print(k)
+for v in Provinces_burundi.values():
+    print(v)
 
 
 
-
-#Ordination du dictionnaire
-# J'ai préféré ordonner mon dictionnaire suivant leur valeurs et par ordre alphabétique croissant
-for k in sorted(Provinces_burundi.values()):
-    print(k)
-
-
-
-
-# Suppression de l'élément à l’index numéro 2 du dictionnaire 1er phase
-# J'ai préféré de trouver  d'abord la clé contenant l'élément à l'index numero 2 pour  me faciliter de l'effacer 
-p=[]
+print("\n16==========================\n")
+# Suppression de l'élément à la clé numéro 2 du dictionnaire 1er phase
+# J'ai préféré de trouver  d'abord la clé key contenant l'élément à la clé numéro 2 pour  me faciliter de l'effacer
+numero=2
+index=numero-1
+key=""
+i=0
 for k in Provinces_burundi.keys():
-    p.append(k)
-print(p[2])
+    if i==index :
+        key=k
+        break
+    i=i+1
 
-# Suppression de l'élément à l’index numéro 2 du dictionnaire phase final
-# Après l'affichage du clé, C'est Bjm pour mon cas du dictionnaire
-del Provinces_burundi['Bjm']
+# Suppression de l'élément à la clé numéro 2 du dictionnaire phase final
+# Après la récuperation du clé key on supprime alors cet element donc sa clé et sa valeur dans la dictionnaire
+del Provinces_burundi[key]
 
 
-# Affichage des nouveaux éléments du dictionnaire
-for key,value in Provinces_burundi.items():
+
+
+print("\n17==========================\n")
+# Changement de l'élément de la clé numéro 5 du dictionnaire 1er phase
+# J'ai préféré de trouver  d'abord la clé key contenant l'élément de la clé numéro 5 pour  me faciliter de l'effacer
+numero=5
+index=numero-1
+key=""
+i=0
+for k in Provinces_burundi.keys():
+    if i==index :
+        key=k
+        break
+    i=i+1
+
+# Changement de l'élément de la clé numéro 5 du dictionnaire phase final
+# Après la récuperation du clé key on change alors cet element donc sa valeur correspondant à la clé key dans la dictionnaire
+Provinces_burundi[key] = "Province de Muyinga"
+
+
+
+print("\n18==========================\n")
+# Ajout  d'un nouvel élément dans le dictionnaire Provinces_burundi
+Provinces_burundi["Rtn"] = "Province de Rutana"
+
+
+print("\n19==========================\n")
+# Création d'une copie du dictionnaire Provinces_burundi dans un nouveau dictionnaire Provinces_burundi_copy
+Provinces_burundi_copy=Provinces_burundi.copy()
+
+
+print("\n20==========================\n")
+# Affichage des nouveaux éléments dans ce nouveau dictionnaire Provinces_burundi_copy
+for key,value in Provinces_burundi_copy.items():
     print(key +" : "+ value)
+
 
