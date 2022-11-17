@@ -7,32 +7,66 @@ print("\nQuestion I : Liste\n")
 
 # Création et remplissage du liste de 10 éléments de type chaîne de caractères
 Provinces_burundi = ["Province de Bururi","Province de Bubanza", "Province de Bujumbura Mairie", "Province de Bujumbura","Province de Cankuzo", "Province de Cibitoke", "Province de Gitega", "Province de Karuzi", "Province de Kayanza", "Province de Kirundo"]
-
+print("\n1==========================\n")
 # Affichage des éléments de la liste
 for p in Provinces_burundi :
     print(p)
 
+print("\n2==========================\n")
 # Changement du contenu de l'élément numéro 5 de la liste
-Provinces_burundi[4]="Province de Ruyigi"
+numero=5
+index=numero-1
+Provinces_burundi[index]="Province de Ruyigi"
 
+
+
+
+# Création d'une nouvelle liste en la remplissant avec les éléments de la liste précédente contenant la lettre "a"
+print("\n3==========================\n")
+
+# La nouvelle liste crée est Provinces_burundi_contains_letter_a
+Provinces_burundi_contains_letter_a=[]
+
+# Ajout les éléments de la liste précédente contenant la lettre "a" dans la nouvelle liste
+for p in Provinces_burundi:
+    if "a" in p :
+        Provinces_burundi_contains_letter_a.append(p)
+
+
+        
+
+print("\n4==========================\n")
 # Ajout d'un élément à la fin de la liste
 Provinces_burundi.append("Province de Rumonge")
 
+
+print("\n5==========================\n")
 # Ajout d'un élément à l’index numéro 2 de la liste
-Provinces_burundi.insert(2,"Province de Muramvya")
+index=2
+Provinces_burundi.insert(index,"Province de Muramvya")
 
+
+print("\n6==========================\n")
 # Suppression de l'élément numéro 3 de la liste
-del Provinces_burundi[2]
+numero=3
+index=numero-1
+del Provinces_burundi[index]
 
+
+print("\n7==========================\n")
 # Suppression de l'élément à l’index numéro 2 de la liste
-Provinces_burundi.pop(2)
+index=2
+Provinces_burundi.pop(index)
 
+print("\n8==========================\n")
 #Ordination de la liste
 # J'ai préféré ordonner la liste suivant l'ordre alphabétique croissant
 Provinces_burundi.sort()
 
+print("\n9==========================\n")
 # Suppression de la liste
 del Provinces_burundi
+
 
 
 
