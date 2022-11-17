@@ -87,16 +87,23 @@ print("\n Question II : Tuple\n")
 # Création et remplissage du tuple de 10 éléments de type chaîne de caractères
 Provinces_burundi = ("Province de Bujumbura","Province de Bubanza", "Province de Bujumbura Mairie","Province de Bururi", "Province de Cankuzo", "Province de Cibitoke", "Province de Gitega", "Province de Karuzi", "Province de Kayanza", "Province de Kirundo")
 
-# Affichage des éléments du tuple
-for p in Provinces_burundi:
-    print(p)
+print("\n10==========================\n")
+# Affichage des éléments du tuple en utilisant la boucle while
+i=0
+while i<len(Provinces_burundi):
+    print(Provinces_burundi[i])
+    i=i+1
 
+print("\n11==========================\n")
 # Affichage du contenu de l'élément numéro 5 du tuple
-print(Provinces_burundi[4])
+numero=5
+index=numero-1
+print(Provinces_burundi[index])
 
+print("\n12==========================\n")
 #Ordination du tuple
-# J'ai préféré ordonner le tuple suivant l'ordre alphabétique croissant
-Provinces_burundi_sorted=sorted(Provinces_burundi)
+# J'ai préféré ordonner le tuple suivant l'ordre alphabétique croissant en utilisant la fonction sorted et sortir comme resultat aprés ordination du tuple d'un type tuple qui est Provinces_burundi_sorted 
+Provinces_burundi_sorted=tuple(sorted(Provinces_burundi))
 
 
 
